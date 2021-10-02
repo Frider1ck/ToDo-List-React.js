@@ -1,0 +1,92 @@
+.add-list {
+
+
+    &__popup {
+        width: 235px;
+        height: 150px;
+        background: #FFFFFF;
+        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+        padding: 18px;
+        box-sizing: border-box;
+        position: relative;
+        top: -30px;
+
+        & input {
+            width: 200px;
+            &:focus {
+                border: 1px solid #d6d6d6;
+            }
+        }
+
+        & ul {
+            & li {
+                display: inline-block;
+            }
+        }
+
+        &-colors {
+            display: flex;
+
+            justify-content: space-between;
+        }
+
+        & button {
+            width: 200px;
+            color: white;
+            background: #4DD599;
+            border-radius: 4px;
+            padding: 10px 0px;
+            border: none;
+            cursor: pointer;
+            margin-top: 13px;
+
+            &:hover {
+                background: darken(#4DD599, 6%)
+            }
+
+            &:active {
+                background: darken(#4DD599, 10%)
+            }
+        }
+
+        &-close-btn {
+            position: absolute;
+            right: -8px;
+            top: -8px;
+            cursor: pointer;
+        }
+    }
+
+    .badge {
+        
+        margin-top: 13px;
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+        border: 2px solid transparent;
+
+        &:active {
+            border: 2px solid #525252;
+        }
+
+        & .active {
+            border: 2px solid #525252;
+        }
+    }
+
+    & .true {
+        border: 2px solid #525252;
+    }
+
+
+}
+
+
+.field {
+    background: #FFFFFF;
+    border: 1px solid #EFEFEF;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 8px 12px;
+}
